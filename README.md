@@ -16,4 +16,4 @@ As usual, load the package in the preable of the document
 For an overview see [`overview-gr-math.pdf`](overview-gr-math.pdf).
 
 ## License
-[MIT License](LICENSE.md)
+[MIT License](LICENSE)
