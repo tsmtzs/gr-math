@@ -1,0 +1,48 @@
+\documentclass[10pt,a4page]{article}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{xgreek}
+
+\setmainfont[Mapping=tex-text]{Linux Biolinum O}
+
+\usepackage{color}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{gr-math}
+
+\pagestyle{empty}
+
+\def\arraystretch{1.3}
+
+\begin{document}
+\section*{Overview of the package \texttt{gr-math}}
+\begin{enumerate}
+\item \verb|gr-math| collects several mathematics functions in Greek:
+  \begin{center}
+    \begin{tabular}{l|l}
+      \textbf{Command} & \textbf{Result} \\\hline
+      \verb|\sin x| & $\sin x$ \\\hline
+      \verb|\cos x| & $\cos x$ \\\hline
+      \verb|\tan x| & $\tan x$ \\\hline
+      \verb|\arcsin x| & $\arcsin x$ \\\hline
+      \verb|\arccos x| & $\arccos x$ \\\hline
+      \verb|\arctan x| & $\arctan x$ \\\hline
+      \verb|\cot x| & $\cot x$ \\\hline
+      \verb|\sec x| & $\sec x$ \\\hline
+      \verb|\csc x| & $\csc x$ \\\hline
+      \verb|\arccot x| & $\arccot x$ \\\hline
+      \verb|\arcsec x| & $\arcsec x$ \\\hline
+      \verb|\arccsc x| & $\arccsc x$ \\\hline
+      \verb|\gcd(\nu\,,\,\mu)| & $\gcd(\nu\,,\,\mu)$ \\\hline
+      \verb|\lcm(\nu\,,\,\mu)| & $\lcm(\nu\,,\,\mu)$
+    \end{tabular}
+  \end{center}
+\item Limits.\\
+  It is customary in Greek school mathematics to write $x\to x_0$ under the symbol of \verb|lim|. We have the command \verb|\limdisplay| for this.\\
+  Thus, \verb|\limdisplay{x\to x_0}f(x)| prints as $\limdisplay{x\to x_0}f(x)$.
+\item Parallel lines.\\
+  \LaTeX\ offers \verb|\parallel| for parallel lines: $\varepsilon_1\parallel\varepsilon_2$. We introduce \verb|\grparallel|: $\varepsilon_1\grparallel\varepsilon_2$
+\end{enumerate}
+\end{document}

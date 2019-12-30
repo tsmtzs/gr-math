@@ -1,0 +1,52 @@
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% This is file 'gr-math.sty'.
+%%
+%% Mathematics operators in Greek.
+%% Adapted from grmath.sty
+%% by Apostolos Syropoulos.
+%%
+%% Copyright (C) 2019 by Tassos Tsesmetzis
+%% 
+%% This file may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either
+%% version 1.3 of this license or any later
+%% version.  The latest version of this license is in:
+%% 
+%% http://www.latex-project.org/lppl.txt
+%% 
+%% and version 1.3 or later is part of all distributions of
+%% LaTeX version 2005/12/01 or later.
+%% 
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{gr-math}[2019/12/30 v1.0 Custom package]
+% 
+\DeclareSymbolFont{groperators}{\encodingdefault}{\familydefault}{m}{n}
+\SetSymbolFont{groperators}{bold}{\encodingdefault}{\familydefault}{bx}{n}
+% 
+\def\sin{\mathop{\mathgroup\symgroperators ημ}\nolimits}
+\def\cos{\mathop{\mathgroup\symgroperators συν}\nolimits}
+\def\tan{\mathop{\mathgroup\symgroperators εφ}\nolimits}
+\def\arcsin{\mathop{\mathgroup\symgroperators τοξημ}\nolimits}
+\def\arccos{\mathop{\mathgroup\symgroperators τοξσυν}\nolimits}
+\def\arctan{\mathop{\mathgroup\symgroperators τοξεφ}\nolimits}
+\def\cot{\mathop{\mathgroup\symgroperators σφ}\nolimits}
+\def\sec{\mathop{\mathgroup\symgroperators τεμ}\nolimits}
+\def\csc{\mathop{\mathgroup\symgroperators στεμ}\nolimits}
+\def\gcd{\mathop{\mathgroup\symgroperators ΜΚΔ}\nolimits}
+\def\lcm{\mathop{\mathgroup\symgroperators ΕΚΠ}\nolimits}
+\def\arccot{\mathop{\mathgroup\symgroperators τοξσφ}\nolimits}
+\def\arcsec{\mathop{\mathgroup\symgroperators τοξτεμ}\nolimits}
+\def\arccsc{\mathop{\mathgroup\symgroperators τοξστεμ}\nolimits}
+% 
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Write $x\to x_0$ under \lim
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\limdisplay}[1]{\displaystyle\lim_{#1}}
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% A symbol for parallel lines
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\grparallel}{\mathrel{/\hspace{-0.25em}/}}
+\endinput
+%%
+%% End of file `gr-math.sty'.
