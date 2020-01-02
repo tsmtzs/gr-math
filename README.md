@@ -8,6 +8,10 @@ The macros of the package are:
 * `\limdisplay`. `\lim` operator in display mode.
 * `\grparallel`. A variant of the operator `\parallel`.
 
+## Installation
+### Linux
+Clone repository `gr-math` under `~/texmf/tex/xelatex/`.
+
 ## Usage
 As usual, load the package in the preable of the document
 
