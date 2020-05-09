@@ -10,6 +10,10 @@
 \usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{bm}
+
+\def\parallelold{\parallel}
+
+% Load the package
 \usepackage{gr-math}
 
 \pagestyle{empty}
@@ -43,7 +47,7 @@
   It is customary in Greek school mathematics to write $x\to x_0$ under the symbol of \verb|lim|. We have the command \verb|\limdisplay| for this.\\
   Thus, \verb|\limdisplay{x\to x_0}f(x)| prints as $\limdisplay{x\to x_0}f(x)$.
 \item Parallel lines.\\
-  \LaTeX\ offers \verb|\parallel| for parallel lines: $\varepsilon_1\parallel\varepsilon_2$. We introduce \verb|\grparallel|: $\varepsilon_1\grparallel\varepsilon_2$
+  \LaTeX\ offers \verb|\parallel| for parallel lines: $\varepsilon_1\parallelold\varepsilon_2$. We redefine \verb|\parallel| to produce: $\varepsilon_1\parallel\varepsilon_2$.
 \item A symbol for the right angle.\\
   With \verb|\hat{A} = 1\rightangle| you get $\hat{A} = 1\rightangle$.
 \end{enumerate}

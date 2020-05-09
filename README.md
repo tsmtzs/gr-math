@@ -6,7 +6,8 @@ The macros of the package are:
 * `\sin, \cos, \tan, \arcsin, \arccos, \arctan, \cot, \sec, \csc, \arccot, \arcsec, \arccsc` and `\gcd`. `gr-math` redefines these in Greek.
 * `\lcm`. Least common multiple operator.
 * `\limdisplay`. `\lim` operator in display mode.
-* `\grparallel`. A variant of the operator `\parallel`.
+* `\parallel`. `gr-math` redefines the operator `\parallel`. The parallel lines appear sloping.
+* `\rightangle`. A symbol for the right angle.
 
 ## Installation
 ### Linux
