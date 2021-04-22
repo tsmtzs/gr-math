@@ -6,12 +6,7 @@
 
 \setmainfont[Mapping=tex-text]{Linux Biolinum O}
 
-\usepackage{color}
-\usepackage{amsfonts}
-\usepackage{amsmath}
-\usepackage{bm}
-
-\def\parallelold{\parallel}
+\def\parallelold{\mathbin{\|}}
 
 % Load the package
 \usepackage{gr-math}
@@ -23,7 +18,7 @@
 \begin{document}
 \section*{Overview of the package \texttt{gr-math}}
 \begin{enumerate}
-\item \verb|gr-math| collects several mathematics functions in Greek:
+\item \verb|gr-math| collects several mathematical functions in Greek:
   \begin{center}
     \begin{tabular}{l|l}
       \textbf{Command} & \textbf{Result} \\\hline
@@ -44,10 +39,10 @@
     \end{tabular}
   \end{center}
 \item Limits.\\
-  It is customary in Greek school mathematics to write $x\to x_0$ under the symbol of \verb|lim|. We have the command \verb|\limdisplay| for this.\\
-  Thus, \verb|\limdisplay{x\to x_0}f(x)| prints as $\limdisplay{x\to x_0}f(x)$.
+  It is customary in Greek school mathematics to write $x\to x_0$ under the symbol of \verb|lim|. \verb|gr-math| offers the macro \verb|\limdisplay| for this.\\
+  Thus, \verb|\limdisplay{x\to x_0}f(x)| results in $\limdisplay{x\to x_0}f(x)$.
 \item Parallel lines.\\
-  \LaTeX\ offers \verb|\parallel| for parallel lines: $\varepsilon_1\parallelold\varepsilon_2$. We redefine \verb|\parallel| to produce: $\varepsilon_1\parallel\varepsilon_2$.
+  \LaTeX\ offers \verb|\parallel| for parallel lines: $\varepsilon_1\parallelold\varepsilon_2$. \verb|gr-math| redefines \verb|\parallel| to produce: $\varepsilon_1\parallel\varepsilon_2$.
 \item A symbol for the right angle.\\
   With \verb|\hat{A} = 1\rightangle| you get $\hat{A} = 1\rightangle$.
 \end{enumerate}

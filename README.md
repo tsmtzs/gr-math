@@ -6,7 +6,7 @@ The macros of the package are:
 * `\sin, \cos, \tan, \arcsin, \arccos, \arctan, \cot, \sec, \csc, \arccot, \arcsec, \arccsc` and `\gcd`. `gr-math` redefines these in Greek.
 * `\lcm`. Least common multiple operator.
 * `\limdisplay`. `\lim` operator in display mode.
-* `\parallel`. `gr-math` redefines the operator `\parallel`. The parallel lines appear sloping.
+* `\parallel`. `gr-math` redefines the operator `\parallel`. The parallel lines of the symbol appear sloped.
 * `\rightangle`. A symbol for the right angle.
 
 ## Installation
@@ -15,9 +15,9 @@ Clone repository `gr-math` under `~/texmf/tex/xelatex/`.
 
 ## Usage
 As usual, load the package in the preable of the document
-
+```latex
 \usepackage{gr-math}
-
+```
 For an overview see [`overview-gr-math.pdf`](overview-gr-math.pdf).
 
 ## License

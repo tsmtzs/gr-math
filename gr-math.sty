@@ -6,18 +6,18 @@
 %% by Apostolos Syropoulos.
 %%
 %% Copyright (C) 2019 by Tassos Tsesmetzis
-%% 
+%%
 %% This file may be distributed and/or modified under the
 %% conditions of the MIT License.
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{gr-math}[2019/12/30 v1.0 Custom package]
-% 
+%
 \RequirePackage{amsmath}
  %
 \DeclareSymbolFont{groperators}{\encodingdefault}{\familydefault}{m}{n}
 \SetSymbolFont{groperators}{bold}{\encodingdefault}{\familydefault}{bx}{n}
-% 
+%
 \def\sin{\mathop{\mathgroup\symgroperators ημ}\nolimits}
 \def\cos{\mathop{\mathgroup\symgroperators συν}\nolimits}
 \def\tan{\mathop{\mathgroup\symgroperators εφ}\nolimits}
@@ -32,7 +32,7 @@
 \def\arccot{\mathop{\mathgroup\symgroperators τοξσφ}\nolimits}
 \def\arcsec{\mathop{\mathgroup\symgroperators τοξτεμ}\nolimits}
 \def\arccsc{\mathop{\mathgroup\symgroperators τοξστεμ}\nolimits}
-% 
+%
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Write $x\to x_0$ under \lim
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -40,7 +40,7 @@
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Redefine \parallel
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\renewcommand{\parallel}{\mathrel{/\hspace{-0.25em}/}}
+\renewcommand{\parallel}{\mathbin{/\!/}}
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Designate right angle
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
